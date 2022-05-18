@@ -1,0 +1,21 @@
+/* ..........................NAVBAR............................. */
+
+
+
+
+/* ...........................MAIN CONTENT.......................... */
+/* .video__thumbnail {
+  width: 100%;
+  height: 33%;
+  object-fit: contain;
+} */
+
+.profile__picture {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.video__title {
+  font-weight: 700;
+}
