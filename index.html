@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/21149164b3.js" crossorigin="anonymous"></script>
   <title>Youtube</title>
@@ -55,9 +55,9 @@
           <li><hr class="dropdown-divider"></li>
         </ul>
       </div>
-      <a class="navbar-brand" href="#">Youtube</a>
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-youtube me-1 logo"></i>Youtube</a>
       <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
       <div class="nav-item">
@@ -88,9 +88,9 @@
             <li><a class='dropdown-item' href="#">Youtube for Artists</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown ms-2 me-2">
+        <li class="nav-item dropdown ms-2 me-3">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-bell" style="color:black"></i>
+            <i class="fa-solid fa-bell bell__icon"></i>
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">Notifications!</a></li>
@@ -115,24 +115,25 @@
   <div class="container__main">
     <div class="row content__row g-3">
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/surfing.jpg" alt="">
             </a>
           </div>
+          <div class="length__tag">12:28</div>
           <div class="col-12 mt-3">
             <img class="profile__picture" src="/images/squirrel.jpg" alt="">
             <div class="ms-5">
               <h6 class="video__title">Roach-Surfing For Days in the Most Beautiful Part of SoCal</h6>
-              <p class="profile__name">Jacko Spivens</p>
+              <p class="profile__name">Jacko Spivens <i class="fa-solid fa-circle-check"></i></p>
               <p class="video__views">331k views . 10 years ago</p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/wow-kid.jpg" alt="">
@@ -142,14 +143,14 @@
             <img class="profile__picture" src="/images/bookshelf.jpg" alt="">
             <div class="ms-5">
               <h6 class="video__title">Your Child Will be Reading at a College Level in No Time!</h6>
-              <p class="profile__name">UHMM University</p>
+              <p class="profile__name">UHMM University <i class="fa-solid fa-circle-check"></i></p>
               <p class="video__views">727k views . 1 year ago</p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail soccer' src="/images/soccer-eyes.jpg" alt="">
@@ -166,7 +167,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail artwork' src="/images/museum-wow.jpg" alt="">
@@ -183,7 +184,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/fair.jpg" alt="">
@@ -193,14 +194,14 @@
             <img class="profile__picture" src="/images/jump.jpg" alt="">
             <div class="ms-5">
               <h6 class="video__title">TOP TEN Places to Find Yourself in Nature</h6>
-              <p class="profile__name">Freedom Outdoors</p>
+              <p class="profile__name">Freedom Outdoors </p>
               <p class="video__views">79k views . 6 hours ago</p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/santa-wow.jpg" alt="">
@@ -217,7 +218,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail muscle' src="/images/muscle.jpg" alt="">
@@ -234,7 +235,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/science-text.jpg" alt="">
@@ -244,14 +245,14 @@
             <img class="profile__picture" src="/images/chemistry.jpg" alt="">
             <div class="ms-5">
               <h6 class="video__title">Chemistry is as easy as 123 - and these middle schoolers prove it</h6>
-              <p class="profile__name">Science Slam-Off</p>
+              <p class="profile__name">Science Slam-Off <i class="fa-solid fa-circle-check"></i></p>
               <p class="video__views">550k views . 2 years ago</p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/court.jpg" alt="">
@@ -268,7 +269,7 @@
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail chicken' src="/images/chicken-2.jpg" alt="">
@@ -278,14 +279,14 @@
             <img class="profile__picture" src="/images/angry-cat.jpg" alt="">
             <div class="ms-5">
               <h6 class="video__title">Never Call Me Chicken</h6>
-              <p class="profile__name">Marty McFly</p>
+              <p class="profile__name">Marty McFly <i class="fa-solid fa-circle-check"></i></p>
               <p class="video__views">2.6k views . 2 hours ago</p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/trees-q.jpg" alt="">
@@ -295,15 +296,14 @@
             <img class="profile__picture" src="/images/nature.jpg" alt="">
             <div class="ms-5">
               <h6 class="video__title">But WHY DO trees not move?</h6>
-              <p class="profile__name">Nature-Nature</p>
+              <p class="profile__name">Nature-Nature <i class="fa-brands fa-itunes-note"></i></p>
               <p class="video__views">42k views . 1 week ago</p>
             </div>
           </div>
         </div>
       </div>
-      
       <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        <div class="row">
+        <div class="row video__block">
           <div class="col-12 video__thumbnail__container">
             <a href="">
               <img class='video__thumbnail' src="/images/stonks.jpg" alt="">
