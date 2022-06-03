@@ -59,8 +59,22 @@ body {
   font-size: 12px;
   font-weight: 550;
   border-radius: 2px;
-  top: 51%;
-  left: 83%;
+  top: 135px;
+  right: 15px;
+  
+}
+
+.video {
+display: none;
+}
+
+/* .video:hover::before {
+  display: block;
+} */
+
+.length__tag__time {
+  position: relative;
+  text-align: center;
 }
 
 .video__thumbnail {
@@ -70,7 +84,9 @@ body {
 }
 
 .video__thumbnail__container {
-  max-height: 155px;
+  /* max-height: 155px; */
+  /* position: relative; */
+  height:155px;
 }
 
 .profile__picture {
