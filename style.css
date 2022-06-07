@@ -21,6 +21,41 @@ body {
   transform:scale(1.2);
 }
 
+.notifications {
+  width: 50vw;
+  height: 600px;
+}
+
+.notification__menu__bell__icon {
+  font-size: 64px;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  color:grey;
+}
+
+.notifaction__menu__text {
+  position: absolute;
+  top:50%;
+  left:34%;
+  color:grey;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.dropdown__menu__icon{
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu {
+  border-radius: 0;
+}
 
 /* ...........................MAIN CONTENT.......................... */
 
@@ -97,7 +132,7 @@ display: none;
 }
 
 .video__title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
 }
 
