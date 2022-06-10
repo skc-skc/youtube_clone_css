@@ -12,17 +12,17 @@
 </head>
 <body>
   <!-- .......................NAVBAR....................... -->
-  <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light border-bottom navbar__custom">
     <div class="container-fluid">
       <div class="nav-item dropdown">
         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-solid fa-bars" style="color: black;"></i>
         </a>
-        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <li><a class="dropdown-item" href="#">Home</a></li>
+        <ul class="dropdown-menu dropdown__big" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#"><i class="fa-solid fa-house dropdown__menu__icon"></i>Home</a></li>
           <li><a class="dropdown-item" href="#">Explore</a></li>
           <li><a class="dropdown-item" href="#">Shorts</a></li>
-          <li><a class='dropdown-item' href="#">Subscriptions</a></li>
+          <li><a class='dropdown-item'v href="#">Subscriptions</a></li>
           <li><hr class="dropdown-divider"></li>
           <li><a class="dropdown-item" href="#">Library</a></li>
           <li><a class="dropdown-item" href="#">History</a></li>
@@ -55,15 +55,17 @@
           <li><hr class="dropdown-divider"></li>
         </ul>
       </div>
-      <a class="navbar-brand" href="#"><i class="fa-brands fa-youtube me-1 logo"></i>Youtube</a>
-      <form class="d-flex">
-        <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>
+      <a class="navbar-brand logo__link" href="#"><i class="fa-brands fa-youtube me-1 logo"></i>Youtube</a>
+      <input class="form-control searchbar" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-dark btn__search" type="submit">
+        <i class="fa-solid fa-magnifying-glass search__icon"></i>
+      </button>
       <div class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">
-          <i class="fa-solid fa-microphone" style="color:black"></i>
-        </a>
+        <div class="navbar__mic__container">
+          <a class="nav-link active" aria-current="page" href="#">
+            <i class="fa-solid fa-microphone mic__icon" style="color:black"></i>
+          </a>
+        </div>
       </div>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item dropdown ms-2 me-2">
@@ -103,11 +105,11 @@
 
           </ul>
         </li>
-        <li class="nav-item dropdown me-2">
+        <li class="nav-item dropdown me-2" >
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="/images/user-profile-pic.jpg" alt="" class="profile__picture">
           </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+          <ul class="dropdown-menu dropdown-menu-end dropdown__big" aria-labelledby="navbarDropdown" >
             <li class="">
               <img src="/images/user-profile-pic.jpg" alt="" class="profile__picture">
               <div class="ms-2" style="font-weight: 600;">Sally Jackson</div>
@@ -133,10 +135,31 @@
           </ul>
         </li>
       </ul>
-        
-      
     </div>
   </nav>
+  <div class="category__bar border-bottom">
+    <span class="badge rounded-pill text-bg-light ms-4">All</span>
+    <span class="badge rounded-pill text-bg-light">Music</span>
+    <span class="badge rounded-pill text-bg-light">Ninja Tortoises 7: Chopper Attacks</span>
+    <span class="badge rounded-pill text-bg-light">News</span>
+    <span class="badge rounded-pill text-bg-light">Soundtracks</span>
+    <span class="badge rounded-pill text-bg-light">Surfing</span>
+    <span class="badge rounded-pill text-bg-light">Computer Programming</span>
+    <span class="badge rounded-pill text-bg-light">Ant Farming</span>
+    <span class="badge rounded-pill text-bg-light">Moonshine</span>
+    <span class="badge rounded-pill text-bg-light">Dogs</span>
+    <span class="badge text-bg-light hide__pill">Hi</span>
+
+  </div>
+  <div class="side__navbar">
+    <ul class="side__navbar__list">
+      <li><i class="fa-solid fa-house dropdown__menu__icon"></i><a href="">Home</a></li>
+      <li><a href="">Explore</a></li>
+      <li><a href="">Shorts</a></li>
+      <li><a href="">Subscriptions</a></li>
+      <li><a href="">Library</a></li>
+    </ul>
+  </div>
   <!-- ....................MAIN CONTENT............... -->
   <div class="container__main">
     <div class="row content__row g-3">
