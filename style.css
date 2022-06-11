@@ -16,12 +16,14 @@ body {
 .side__navbar {
   position: fixed;
   top:10%;
-  left: 0%;
+  left: 1%;
   width: 70px;
   height: 400px;
-  background-color: grey;
+  background-color: white;
   font-size: 12px;
 }
+
+
 
 .side__navbar__list {
   list-style-type: none;
@@ -91,10 +93,18 @@ body {
   background-color: white;
   z-index: 10;
   width: 100%;
-  overflow: hidden; 
+  overflow-y: hidden; 
+  overflow-x: scroll;
   height: 55px;
   margin-left: 70px;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
 }
+
+.category__bar::-webkit-scrollbar {
+  display: none;
+}
+
 
 .rounded-pill {
   color:black;
@@ -182,6 +192,14 @@ body {
   overflow: hidden;
 }
 
+.profile__dropdown {
+  width: 300px;
+}
+
+.home__dropdown {
+  width: 220px;
+}
+
 .dropdown__big:hover {
   overflow-y:scroll;
 }
@@ -266,6 +284,10 @@ display: none;
   width: 35px;
   float:left;
   margin-left: 5px;
+}
+.sally__picture {
+  height: 42px;
+  width: 42px;
 }
 
 .video__title {

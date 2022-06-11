@@ -18,7 +18,7 @@
         <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fa-solid fa-bars" style="color: black;"></i>
         </a>
-        <ul class="dropdown-menu dropdown__big" aria-labelledby="navbarDropdown">
+        <ul class="dropdown-menu dropdown__big home__dropdown" aria-labelledby="navbarDropdown">
           <li><a class="dropdown-item" href="#"><i class="fa-solid fa-house dropdown__menu__icon"></i>Home</a></li>
           <li><a class="dropdown-item" href="#">Explore</a></li>
           <li><a class="dropdown-item" href="#">Shorts</a></li>
@@ -109,11 +109,16 @@
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="/images/user-profile-pic.jpg" alt="" class="profile__picture">
           </a>
-          <ul class="dropdown-menu dropdown-menu-end dropdown__big" aria-labelledby="navbarDropdown" >
-            <li class="">
-              <img src="/images/user-profile-pic.jpg" alt="" class="profile__picture">
-              <div class="ms-2" style="font-weight: 600;">Sally Jackson</div>
-              <a class="dropdown-item mt-2" href="#" style="font-size:14px; color:#065fd4;">Manage your Google Account</a></li>
+          <ul class="dropdown-menu dropdown-menu-end dropdown__big profile__dropdown" aria-labelledby="navbarDropdown" >
+            <li class="row">
+              <div class="col-3">
+                <img src="/images/user-profile-pic.jpg" alt="" class="profile__picture sally__picture ms-3">
+              </div>
+              <div class="col-9">
+                <div class="" style="font-weight: 600;">Sally Jackson</div>
+                <a class="mt-2" href="#" style="font-size:14px; color:#065fd4; text-decoration: none;">Manage your Google Account</a>
+              </div>
+            </li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Your Channel</a></li>
             <li><a class="dropdown-item" href="#">Purchases and Memberships</a></li>
@@ -148,16 +153,45 @@
     <span class="badge rounded-pill text-bg-light">Ant Farming</span>
     <span class="badge rounded-pill text-bg-light">Moonshine</span>
     <span class="badge rounded-pill text-bg-light">Dogs</span>
+    <span class="badge rounded-pill text-bg-light">Cleats</span>
+    <span class="badge rounded-pill text-bg-light">Artisanal Cheese</span>
+    <span class="badge rounded-pill text-bg-light">Sportsmanship</span>
+    <span class="badge rounded-pill text-bg-light">Narnia</span>
+    <span class="badge rounded-pill text-bg-light">Wing Nuts</span>
     <span class="badge text-bg-light hide__pill">Hi</span>
-
   </div>
   <div class="side__navbar">
     <ul class="side__navbar__list">
-      <li><i class="fa-solid fa-house dropdown__menu__icon"></i><a href="">Home</a></li>
-      <li class="side__navbar__list__item"><a href="">Explore</a></li>
-      <li><a href="">Shorts</a></li>
-      <li><a href="">Subscriptions</a></li>
-      <li><a href="">Library</a></li>
+      <li>
+        <div class="row">
+          <i class="fa-solid fa-house dropdown__menu__icon col-12 ms-3"></i>
+          <a href="" class="col-12 ms-2 mt-1">Home</a>
+        </div>
+      </li>
+      <li>
+        <div class="row">
+          <i class="fa-solid fa-compass dropdown__menu__icon col-12 ms-3"></i>
+          <a href="" class="col-12 ms-2 mt-1">Explore</a>
+        </div>
+      </li>
+      <li>
+          <div class="row">
+            <i class="fa-solid fa-circle-play col-12 ms-3 dropdown__menu__icon"></i>
+            <a href="" class="col-12 ms-2 mt-1">Shorts</a>
+          </div>
+      </li>
+      <li>
+          <div class="row">
+            <i class="fa-solid fa-feather-pointed col-12 ms-3 dropdown__menu__icon"></i>
+            <a href="" class="col-12 mt-1">Subscribed</a>
+          </div>
+      </li>
+      <li>
+          <div class="row">
+            <i class="fa-solid fa-book col-12 ms-3 dropdown__menu__icon"></i>
+            <a href="" class="col-12 mt-1 ms-2">Library</a>
+          </div>
+      </li>
     </ul>
   </div>
   <!-- ....................MAIN CONTENT............... -->
