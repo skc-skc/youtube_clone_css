@@ -265,6 +265,25 @@ body {
   }
 }
 
+@media screen and (max-width: 429px) {
+  .mic__mobile {
+    display: none;
+  }
+
+  .nav__item__notification {
+    display:none;
+  }
+
+  .nav-item {
+    margin: 0 1px !important;
+  }
+
+  .search__icon__mobile {
+    margin-top: 8px !important;
+    margin-right: 7px !important;
+  }
+}
+
 
 /* ...........................MAIN CONTENT.......................... */
 
